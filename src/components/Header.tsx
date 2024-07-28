@@ -49,7 +49,7 @@ export default function Header() {
                 {navItems.map((item) => (
                   <div
                     key={item.name}
-                    className="text-[22px] text-white relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground my-[5px]"
+                    className="!text-[20px] text-white relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground my-[5px]"
                   >
                     <NavLink src={item.src} setIsSheetOpen={setIsSheetOpen}>
                       {item.name}
