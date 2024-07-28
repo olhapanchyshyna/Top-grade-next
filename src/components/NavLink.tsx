@@ -1,17 +1,28 @@
 "use client";
-import { handleSmoothScroll } from "@/lib/handleSmoothScroll";
-import Link from "next/link";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 type NavLinkProps = {
   children: React.ReactNode;
   src: string;
+  setIsSheetOpen?: Dispatch<SetStateAction<boolean>>;
 };
 
-export default function NavLink({ children, src }: NavLinkProps) {
+export default function NavLink({
+  children,
+  src,
+  setIsSheetOpen,
+}: NavLinkProps) {
   return (
-    <Link href={src} onClick={handleSmoothScroll}>
-      {children}
-    </Link>
+    <ScrollIntoView
+      selector={src}
+      onClick={() => {
+        if (setIsSheetOpen) {
+          setIsSheetOpen(false);
+        }
+      }}
+    >
+      <span>{children}</span>
+    </ScrollIntoView>
   );
 }
