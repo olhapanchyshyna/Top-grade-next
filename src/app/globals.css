@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.boxShadowImg{
+  box-shadow: -22px -14px 55px 0px rgba(51,39,185,0.66);
+}
+.boxShadowBudget{
+  box-shadow: 125px 89px 59px -83px rgba(51,39,185,0.68);
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/manrope-v15-latin-regular.woff2') format('woff2'),
+       url('/fonts/manrope-v15-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('/fonts/unbounded-v7-latin-regular.woff2') format('woff2'),
+       url('/fonts/unbounded-v7-latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
