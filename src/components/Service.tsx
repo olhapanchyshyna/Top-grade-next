@@ -17,7 +17,7 @@ export default function Service() {
           />
           <Text
             className="text-end md:text-start"
-            text="Everyone promises premium service, but no one explains what it is. I have 17 years of experience in premium customer service, I was one of the top 10 Mercedes sales managers in Russia, and I am used to treating the client as a partner, and not as a bag of money and cockroaches in my head."
+            text="Everyone promises premium service, but no one explains what it is. I have 17 years of experience in premium customer service, I was one of the top 10 Mercedes sales managers in Ukraine, and I am used to treating the client as a partner, and not as a bag of money and cockroaches in my head."
           />
         </div>
       </div>
