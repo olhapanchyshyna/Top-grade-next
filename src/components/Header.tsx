@@ -45,11 +45,11 @@ export default function Header() {
               side="right"
               className=" bg-[#774aa2] max-w-[250px]"
             >
-              <SheetDescription className="flex flex-col p-4">
+              <SheetDescription className="flex flex-col mt-[60px]">
                 {navItems.map((item) => (
                   <div
                     key={item.name}
-                    className="text-[18px] text-white relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground"
+                    className="text-[20px] text-white relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground my-[5px]"
                   >
                     <NavLink src={item.src} setIsSheetOpen={setIsSheetOpen}>
                       {item.name}
